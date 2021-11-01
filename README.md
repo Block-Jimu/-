@@ -18,3 +18,34 @@
 2）学生选课操作、退课操作
 3）打印学生课表信息（包括：编号、课程名称、上课地点、时间、授课教师等）
 3.编写实验报告。
+源代码
+package one;
+class Fish{
+ int weight;
+}
+class Lake{
+ Fish fish;
+ void setFish(Fish s){
+  fish = s;
+ }
+ void eat(int n){
+  fish.weight = fish.weight + n;
+ }
+}
+class FishandLake{
+ public static void main(String[] args) {
+  Fish niqiu = new Fish();
+  System.out.println(niqiu.weight); 
+  Lake dongtinghu  = new Lake();
+  Lake xihu        = new Lake();
+  taihu.setFish(niqiu);
+  taihu.eat(15);
+  System.out.println(niqiu.weight); 
+  System.out.println(taihu.fish.weight); 
+  dongtinghu.setFish(niqiu);
+  dongtinghu.eat(8);
+  System.out.println(niqiu.weight); 
+  System.out.println(dongtinghu.fish.weight); 
+  xihu.setFish(niqiu);
+  xihu.eat(10);
+  System.out.println(niqiu.w
